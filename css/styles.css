@@ -3,13 +3,21 @@
   --margin: 5vmax;
 }
 
-.namn_vanster {
-  /* opacity: 0; */
+.namn {
+  opacity: 0;
+  transition: opacity .5s;
   position: absolute;
-  left: var(--margin);
   bottom: calc(2 * var(--margin));
   /* Set a max-width to prevent going over the right margin at 100% - 2 * margin, 1728px at 1080p */
   max-width: calc(100vw - 2 * var(--margin));
+}
+
+.namn_vanster {
+  left: var(--margin);
+}
+
+.namn_hoger {
+  right: var(--margin);
 }
 
 .line {
@@ -33,6 +41,16 @@
   background-color: var(--white-color);
 }
 
+.namn #f0:before {
+  content: '';
+  background-color: var(--main-color);
+  width: 2em;
+  display: inline-block;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
 .namn #f1 {
   font-family: 'Yle Medium';
   font-size: 0.8rem;
@@ -45,16 +63,21 @@
 }
 
 .namn_vanster #f0:before {
-  content: '';
-  background-color: var(--main-color);
-  width: 2em;
-  display: inline-block;
   left: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
 }
 
 .namn_vanster #f1 {
   padding-left: calc(2.5em / 0.8);
+}
+
+.namn_hoger #f0 {
+  padding-right: 2.5em;
+}
+
+.namn_hoger #f0:before {
+  right: 0;
+}
+
+.namn_hoger #f1 {
+  padding-right: calc(2.5em / 0.8);
 }

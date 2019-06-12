@@ -7,14 +7,12 @@ webcg.on('data', function (data) {
   }
 })
 webcg.on('play', function () {
-  const overlay = document.querySelector('.overlay')
+  const overlay = document.querySelector('.namn')
   // Swap intro and outro classes
-  overlay.classList.add('intro')
-  overlay.classList.remove('outro')
+  overlay.style.opacity = 1;
 })
 webcg.on('stop', function () {
-  const overlay = document.querySelector('.overlay')
+  const overlay = document.querySelector('.namn')
   // Swap intro and outro classes
-  overlay.classList.remove('intro')
-  overlay.classList.add('outro')
+  overlay.style.opacity = 0;
 })
