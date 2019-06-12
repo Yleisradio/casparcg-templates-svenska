@@ -1,0 +1,23 @@
+html {
+  /* Explicitly set background color */
+  background-color: transparent;
+
+  /* Disable scrollbars by clipping page overflow */
+  overflow: hidden;
+
+  /* Set default box-sizing to border-box for easier sizing of elements */
+  box-sizing: border-box;
+
+  /* Set default font family */
+  font-family: Yle, Verdana, Arial, sans-serif;
+
+  /* Set responsive root font size to 43.2px at 1080p */
+  font-size: 4vh;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  /* Make box-sizing property easy to change by components if required */
+  box-sizing: inherit;
+}

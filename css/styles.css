@@ -1,0 +1,60 @@
+:root {
+  /* Define a variable for the margin of the overlay, 96px at 1080p */
+  --margin: 5vmax;
+}
+
+.namn_vanster {
+  /* opacity: 0; */
+  position: absolute;
+  left: var(--margin);
+  bottom: calc(2 * var(--margin));
+  /* Set a max-width to prevent going over the right margin at 100% - 2 * margin, 1728px at 1080p */
+  max-width: calc(100vw - 2 * var(--margin));
+}
+
+.line {
+  /* Define padding relative to the font size */
+  padding: 0.2em 0.5em;
+  /* Prevent text wrapping and hide overflow */
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.line:empty {
+  /* Hide empty line, both first or second */
+  display: none;
+}
+
+.namn #f0 {
+  font-family: 'Yle Black';
+  font-size: 1rem;
+  color: var(--dark-color);
+  background-color: var(--white-color);
+}
+
+.namn #f1 {
+  font-family: 'Yle Medium';
+  font-size: 0.8rem;
+  color: var(--white-color);
+  background-color: var(--dark-color);
+}
+
+.namn_vanster #f0 {
+  padding-left: 2.5em;
+}
+
+.namn_vanster #f0:before {
+  content: '';
+  background-color: var(--main-color);
+  width: 2em;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.namn_vanster #f1 {
+  padding-left: calc(2.5em / 0.8);
+}
