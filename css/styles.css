@@ -18,6 +18,7 @@
 
 .namn_hoger {
   right: var(--margin);
+  text-align: right;
 }
 
 .line {
