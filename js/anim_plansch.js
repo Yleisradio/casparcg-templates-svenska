@@ -7,12 +7,12 @@ webcg.on('data', function (data) {
   }
 })
 webcg.on('play', function () {
-  const overlay = document.querySelector('.namn')
+  const overlay = document.querySelector('.plansch')
   // Swap intro and outro classes
   overlay.style.opacity = 1;
 })
 webcg.on('stop', function () {
-  const overlay = document.querySelector('.namn')
+  const overlay = document.querySelector('.plansch')
   // Swap intro and outro classes
   overlay.style.opacity = 0;
 })
