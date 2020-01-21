@@ -1,0 +1,108 @@
+html, body {
+	width:1920px;  											/* Set to your channel's resolution */
+	height:1080px;											/* Set to your channel's resolution */
+	margin:0;												/* Use all available space */
+	padding:0;												/* Use all available space */
+	background:transparent;									/* The HTML consumer actually makes your background transparent by default, unless a color or image is specified - but this might be usefull when debugging in browsers */
+	overflow:hidden;										/* Hide any overflowing elements - to disable scollbars */
+	-webkit-font-smoothing:antialiased !important;	 		/* Set aliasing of fonts - possible options: none, antialiased,  subpixel-antialiased */
+}
+
+@font-face {
+  font-family: 'Yle-Black';
+  src: url("../fonts/Yle-Black.ttf");
+}
+
+@font-face {
+  font-family: 'Yle-Medium';
+  src: url("../fonts/Yle-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Yle-Regular';
+  src: url("../fonts/Yle-Regular.ttf");
+}
+
+.main {
+  position: absolute;
+  top: 851px;
+  left: 87px;
+  width: 1746px;
+  opacity: 0;
+}
+
+.f1_bg {
+  background: #ff6633;
+  display: table;
+  height: 63px;
+  margin-left: 20px;
+  position: relative;
+}
+.f1_text {
+  color: #fff;
+  font-family: 'Yle-Black';
+  font-size: 52px;
+  margin-top: -5px;
+  margin-left: 20px;
+  margin-right: 15px;
+  margin-bottom: -12px;
+  max-width: 1716px;
+}
+
+.f2_bg {
+  background: #fff;
+  display: table;
+  height: 86px;
+  position: relative;
+}
+.f2_text {
+  color: #000;
+  font-family: 'Yle-Black';
+  font-size: 72px;
+  margin-top: -5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: -12px;
+  max-width: 1716px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.f3_bg {
+  z-index: 2;
+  background: #252525;
+  float: left;
+  height: 57px;
+  position: relative;
+}
+.f3_text {
+  color: #fff;
+  font-family: 'Yle-Regular';
+  font-size: 38px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+.ticker_bg {
+  z-index: -1;
+  background-color: #00b4c8;
+  width: 100%;
+}
+.ticker {
+  z-index: 1;
+  width: 100%;
+}
+
+.webTicker {
+  background-color: #00b4c8;
+  color: #fff;
+  float: left;
+  position: relative;
+}
+
+.webTicker li {
+  font-size: 50px;
+  font-family: 'Yle-Medium';
+  letter-spacing: -2px;
+}
