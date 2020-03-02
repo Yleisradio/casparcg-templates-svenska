@@ -15,7 +15,7 @@ html, body {
 
 @font-face {
   font-family: 'Yle-Medium';
-  src: url("../fonts/Yle-Medium.ttf");
+  src: url("../fonts/YleCondensed-Medium-Saami-uusi.otf");
 }
 
 @font-face {
@@ -25,47 +25,48 @@ html, body {
 
 .main {
   position: absolute;
-  top: 851px;
-  left: 87px;
-  width: 1746px;
+  top: 840px;
+  left: 70px;
+  width: 1544px;
   opacity: 0;
 }
 
 .f1_bg {
-  background: #ff6633;
+  background: #c42942;
   display: table;
-  height: 63px;
-  margin-left: 20px;
+  height: 50px;
   position: relative;
 }
 .f1_text {
   color: #fff;
   font-family: 'Yle-Black';
-  font-size: 52px;
-  margin-top: -5px;
+  font-size: 34px;
+  margin-top: 1px;
   margin-left: 20px;
-  margin-right: 15px;
-  margin-bottom: -12px;
-  max-width: 1716px;
+  margin-right: 20px;
+  margin-bottom: -20px;
+  max-width: 1544px;
+
 }
 
 .f2_bg {
   background: #fff;
   display: table;
-  height: 86px;
+  height: 84px;
   position: relative;
 }
 .f2_text {
   color: #000;
   font-family: 'Yle-Black';
-  font-size: 72px;
-  margin-top: -5px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: -12px;
-  max-width: 1716px;
+  font-size: 62px;
+  margin-top: 0px;
+  padding-left: 15px;
+  margin-right: -15px;
+  margin-bottom: -20px;
+  width: 1544px;
   overflow: hidden;
   white-space: nowrap;
+  letter-spacing: -2px;
 }
 
 .f3_bg {
@@ -86,23 +87,25 @@ html, body {
 
 .ticker_bg {
   z-index: -1;
-  background-color: #00b4c8;
-  width: 100%;
+  background: rgba(37, 37, 37, 0.8);
+  width: 1544px;
 }
 .ticker {
   z-index: 1;
-  width: 100%;
+  width: 97%;
+  height: 54px;
+  padding-left: 25px;
+  padding-right: -60px;
 }
 
 .webTicker {
-  background-color: #00b4c8;
+
   color: #fff;
   float: left;
   position: relative;
 }
 
 .webTicker li {
-  font-size: 50px;
+  font-size: 42px;
   font-family: 'Yle-Medium';
-  letter-spacing: -2px;
 }

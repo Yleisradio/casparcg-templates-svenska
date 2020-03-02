@@ -7,7 +7,7 @@
 
 .line {
   /* Define padding relative to the font size */
-  padding: 0.2em 0.5em;
+  padding: 0.1em 0.8em 0.1em 0.4em;
   /* Prevent text wrapping and hide overflow */
   white-space: nowrap;
   overflow: hidden;
@@ -25,7 +25,7 @@
   opacity: 0;
   transition: opacity .5s;
   position: absolute;
-  top: calc(9 * var(--margin));
+  top: calc(10 * var(--margin));
   /* Set a max-width to prevent going over the right margin at 100% - 2 * margin, 1728px at 1080p */
   max-width: calc(100vw - 2 * var(--margin));
 }
@@ -41,15 +41,16 @@
 
 .namn #f0 {
   font-family: 'Yle Black';
-  font-size: 1rem;
-  color: var(--dark-color);
+  font-size: 0.75rem;
+  color: var(--black-color);
   background-color: var(--white-color);
+  letter-spacing: -1px;
 }
 
 .namn #f0:before {
   content: '';
   background-color: var(--main-color);
-  width: 2em;
+  width: 1.8em;
   display: inline-block;
   top: 0;
   bottom: 0;
@@ -58,10 +59,10 @@
 
 .namn #f1 {
   font-family: 'Yle Medium';
-  line-height: 1.2;
-  font-size: 0.85rem;
+  line-height: 1.4;
+  font-size: 0.65rem;
   color: var(--white-color);
-  background-color: var(--dark-color);
+  background-color: var(--grey-color);
 }
 
 .namn_vanster #f0 {
@@ -73,7 +74,7 @@
 }
 
 .namn_vanster #f1 {
-  padding-left: calc(2.5em / 0.8);
+  padding-left: calc(2.3em / 0.8);
 }
 
 .namn_hoger #f0 {
@@ -99,14 +100,13 @@
   max-width: calc(100vw - 2 * var(--margin));
   right: var(--margin);
   text-align: right;
-  text-transform: uppercase;
 }
 
 .direkt #f0 {
   font-family: 'Yle Black';
-  font-size: 1rem;
-  color: var(--white-color);
-  background-color: var(--dark-color);
+  font-size: 0.75em;
+  color: var(--black-color);
+  background-color: var(--white-color);
   padding-right: 2.5em;
 }
 
@@ -122,10 +122,10 @@
 }
 
 .direkt #f1 {
-  font-family: 'Yle Black';
+  font-family: 'Yle Medium';
   line-height: 1.2;
-  font-size: 0.85rem;
-  color: var(--dark-color);
-  background-color: var(--white-color);
+  font-size: 0.7rem;
+  color: var(--white-color);
+  background-color: var(--grey-color);
   padding-right: calc(2.5em / 0.8);
 }

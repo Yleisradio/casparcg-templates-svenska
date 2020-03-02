@@ -9,7 +9,7 @@ function play() {
 			autoFetchFlockler();
 			$( "#main" ).fadeTo( 500 , maxOpacity );
 	}
-	setTimeout(delayed, 40);
+	setTimeout(delayed, 400);
 }
 
 function stop() {
