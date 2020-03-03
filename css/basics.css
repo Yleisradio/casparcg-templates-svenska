@@ -21,3 +21,23 @@ html {
   /* Make box-sizing property easy to change by components if required */
   box-sizing: inherit;
 }
+
+@font-face {
+  font-family: 'Yle-Black';
+  src: url("../fonts/Yle-Black.ttf");
+}
+
+@font-face {
+  font-family: 'Yle-Medium';
+  src: url("../fonts/YleCondensed-Medium-Saami-uusi.otf");
+}
+
+@font-face {
+  font-family: 'Yle-Regular';
+  src: url("../fonts/Yle-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Yle-Bold';
+  src: url("../fonts/Yle-Bold-Saami-uusi.otf");
+}

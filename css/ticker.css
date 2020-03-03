@@ -3,21 +3,6 @@
   --margin: 3.65vmax;
 }
 
-@font-face {
-  font-family: 'Yle-Black';
-  src: url("../fonts/Yle-Black.ttf");
-}
-
-@font-face {
-  font-family: 'Yle-Medium';
-  src: url("../fonts/YleCondensed-Medium-Saami-uusi.otf");
-}
-
-@font-face {
-  font-family: 'Yle-Regular';
-  src: url("../fonts/Yle-Regular.ttf");
-}
-
 .main {
   position: absolute;
   top: calc(12 * var(--margin));
@@ -30,14 +15,14 @@
   background: var(--main-color);
   display: table;
   position: relative;
-  padding: 0.1em 0.4em;
+  padding: 0.2em 0.4em;
 }
 
 .f1_text {
   color: var(--white-color);
   font-family: 'Yle-Black';
   font-size: 0.8rem;
-  line-height: 1.2;
+  line-height: 1;
   width: 100%;
 }
 
@@ -94,5 +79,6 @@
 
 .webTicker li {
   font-size: 1rem;
+  line-height: 1.2;
   font-family: 'Yle-Medium';
 }

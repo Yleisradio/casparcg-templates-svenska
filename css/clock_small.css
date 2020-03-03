@@ -1,0 +1,50 @@
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+:root {
+  /* Define a variable for the margin of the overlay, ~70px at 1080p */
+  --margin: 3.65vmax;
+}
+
+.clock {
+  position: absolute;
+  top: calc(12 * var(--margin) + 1.135em);
+  right: var(--margin);
+  opacity: 0;
+  transition: opacity .5s;
+  width: 12vw;
+  padding-left: .25em;
+}
+
+.clock-small {
+	text-align: center;
+	width: 100%;
+  background: var(--dark-color);
+  font-family: 'Yle-Bold';
+  font-size: 0.9rem;
+  line-height: 1.48;
+  padding: 0 0.4em;
+  color: white;
+}
+
+.live {
+	text-align: center;
+	width: 100%;
+  font-family: 'Yle-Black';
+  font-size: 1.1rem;
+  line-height: calc(1.45 * 1.25 / 1.1);
+  padding: 0.1em 0.4em 0em;
+  color: white;
+	background: linear-gradient(-45deg, #dd4052, #f2bc50, #dd4052, #dd4052);
+	background-size: 600% 600%;
+	animation: gradient 15s ease infinite;
+}
