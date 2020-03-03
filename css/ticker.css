@@ -1,11 +1,11 @@
 html, body {
-	width:1920px;  											/* Set to your channel's resolution */
-	height:1080px;											/* Set to your channel's resolution */
-	margin:0;												/* Use all available space */
-	padding:0;												/* Use all available space */
-	background:transparent;									/* The HTML consumer actually makes your background transparent by default, unless a color or image is specified - but this might be usefull when debugging in browsers */
-	overflow:hidden;										/* Hide any overflowing elements - to disable scollbars */
-	-webkit-font-smoothing:antialiased !important;	 		/* Set aliasing of fonts - possible options: none, antialiased,  subpixel-antialiased */
+  width: 1920px;                                   /* Set to your channel's resolution */
+  height: 1080px;                                  /* Set to your channel's resolution */
+  margin: 0;                                       /* Use all available space */
+  padding: 0;                                      /* Use all available space */
+  background: transparent;                         /* The HTML consumer actually makes your background transparent by default, unless a color or image is specified - but this might be usefull when debugging in browsers */
+  overflow: hidden;                                /* Hide any overflowing elements - to disable scollbars */
+  -webkit-font-smoothing: antialiased !important;  /* Set aliasing of fonts - possible options: none, antialiased, subpixel-antialiased */
 }
 
 @font-face {
@@ -46,7 +46,6 @@ html, body {
   margin-right: 20px;
   margin-bottom: -20px;
   max-width: 1544px;
-
 }
 
 .f2_bg {
@@ -84,12 +83,12 @@ html, body {
   margin-right: 15px;
 }
 
-
 .ticker_bg {
   z-index: -1;
   background: rgba(37, 37, 37, 0.8);
   width: 1544px;
 }
+
 .ticker {
   z-index: 1;
   width: 97%;
@@ -99,7 +98,6 @@ html, body {
 }
 
 .webTicker {
-
   color: #fff;
   float: left;
   position: relative;
