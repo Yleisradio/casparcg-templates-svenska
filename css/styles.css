@@ -7,7 +7,7 @@
 
 .line {
   /* Define padding relative to the font size */
-  padding: 0.1em 0.8em 0.1em 0.4em;
+  padding: 0.1em 0.4em;
   /* Prevent text wrapping and hide overflow */
   white-space: nowrap;
   overflow: hidden;
@@ -66,7 +66,7 @@
 }
 
 .namn_vanster #f0 {
-  padding-left: 2.5em;
+  padding-left: calc(2em / 0.75);
 }
 
 .namn_vanster #f0:before {
@@ -74,11 +74,11 @@
 }
 
 .namn_vanster #f1 {
-  padding-left: calc(2.3em / 0.8);
+  padding-left: calc(2em / 0.65);
 }
 
 .namn_hoger #f0 {
-  padding-right: 2.5em;
+  padding-right: calc(2em / 0.75);
 }
 
 .namn_hoger #f0:before {
@@ -86,7 +86,7 @@
 }
 
 .namn_hoger #f1 {
-  padding-right: calc(2.5em / 0.8);
+  padding-right: calc(2em / 0.65);
 }
 
 /* Direktplansch */
@@ -104,10 +104,10 @@
 
 .direkt #f0 {
   font-family: 'Yle Black';
-  font-size: 0.75em;
+  font-size: 0.75rem;
   color: var(--black-color);
   background-color: var(--white-color);
-  padding-right: 2.5em;
+  padding-right: calc(2em / 0.75);
 }
 
 .direkt #f0:before {
@@ -127,5 +127,5 @@
   font-size: 0.7rem;
   color: var(--white-color);
   background-color: var(--grey-color);
-  padding-right: calc(2.5em / 0.8);
+  padding-right: calc(2em / 0.7);
 }
