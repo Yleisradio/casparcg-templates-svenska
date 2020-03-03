@@ -1,11 +1,6 @@
-html, body {
-  width: 1920px;                                   /* Set to your channel's resolution */
-  height: 1080px;                                  /* Set to your channel's resolution */
-  margin: 0;                                       /* Use all available space */
-  padding: 0;                                      /* Use all available space */
-  background: transparent;                         /* The HTML consumer actually makes your background transparent by default, unless a color or image is specified - but this might be usefull when debugging in browsers */
-  overflow: hidden;                                /* Hide any overflowing elements - to disable scollbars */
-  -webkit-font-smoothing: antialiased !important;  /* Set aliasing of fonts - possible options: none, antialiased, subpixel-antialiased */
+:root {
+  /* Define a variable for the margin of the overlay, ~70px at 1080p */
+  --margin: 3.65vmax;
 }
 
 @font-face {
@@ -25,85 +20,79 @@ html, body {
 
 .main {
   position: absolute;
-  top: 840px;
-  left: 70px;
-  width: 1544px;
+  top: calc(12 * var(--margin));
+  left: var(--margin);
+  width: calc(100vw - 2 * var(--margin) - 12vw);
   opacity: 0;
 }
 
 .f1_bg {
-  background: #c42942;
+  background: var(--main-color);
   display: table;
-  height: 50px;
   position: relative;
+  padding: 0.1em 0.4em;
 }
+
 .f1_text {
-  color: #fff;
+  color: var(--white-color);
   font-family: 'Yle-Black';
-  font-size: 34px;
-  margin-top: 1px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: -20px;
-  max-width: 1544px;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  width: 100%;
 }
 
 .f2_bg {
-  background: #fff;
+  background: var(--white-color);
   display: table;
-  height: 84px;
   position: relative;
+  padding: 0.1em 0.4em 0em;
+  width: 100%;
 }
+
 .f2_text {
-  color: #000;
+  color: var(--black-color);
   font-family: 'Yle-Black';
-  font-size: 62px;
-  margin-top: 0px;
-  padding-left: 15px;
-  margin-right: -15px;
-  margin-bottom: -20px;
-  width: 1544px;
+  font-size: 1.45rem;
+  line-height: 1.25;
   overflow: hidden;
   white-space: nowrap;
-  letter-spacing: -2px;
+  letter-spacing: -0.05rem;
 }
 
 .f3_bg {
   z-index: 2;
   background: #252525;
   float: left;
-  height: 57px;
   position: relative;
+  padding: 0.1em 0.4em;
 }
+
 .f3_text {
-  color: #fff;
+  color: var(--white-color);
   font-family: 'Yle-Regular';
-  font-size: 38px;
-  margin-left: 15px;
-  margin-right: 15px;
+  font-size: 0.85rem;
+  line-height: 1.25;
 }
 
 .ticker_bg {
   z-index: -1;
-  background: rgba(37, 37, 37, 0.8);
-  width: 1544px;
+  background: var(--dark-color);
+  width: 100%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .ticker {
   z-index: 1;
-  width: 97%;
-  height: 54px;
-  padding-left: 25px;
-  padding-right: -60px;
 }
 
 .webTicker {
-  color: #fff;
+  color: var(--white-color);
   float: left;
   position: relative;
 }
 
 .webTicker li {
-  font-size: 42px;
+  font-size: 1rem;
   font-family: 'Yle-Medium';
 }

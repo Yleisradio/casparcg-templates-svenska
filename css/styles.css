@@ -62,7 +62,7 @@
   line-height: 1.4;
   font-size: 0.65rem;
   color: var(--white-color);
-  background-color: var(--grey-color);
+  background-color: var(--dark-color);
 }
 
 .namn_vanster #f0 {
@@ -126,6 +126,6 @@
   line-height: 1.2;
   font-size: 0.7rem;
   color: var(--white-color);
-  background-color: var(--grey-color);
+  background-color: var(--dark-color);
   padding-right: calc(2em / 0.7);
 }
