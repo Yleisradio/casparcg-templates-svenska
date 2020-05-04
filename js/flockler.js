@@ -2,9 +2,9 @@
 
 var data = "";
 var flocklerId = flocklerIdLast = 0;
-var f1Last = f2Last = f3Last = f4 = "";
-var f5 = 10;
-var f6 = false;
+var f1Last = f2 = "";
+var f3 = 10;
+var f4 = false;
 var articles = tmpArticles = lastArticles = [];
 var intervalRun = false;
 var intervalId;
@@ -71,8 +71,8 @@ function sanitizeFlocklerData(str) {
     //if (pos != -1 && pos < 30) {
         str = str.substring(pos);
     //}
-    if (f6) {
-		// If f6 is set to true, only output text between <strong></strong> tags
+    if (f4) {
+		// If f4 is set to true, only output text between <strong></strong> tags
 		var count = (str.match(/<strong>/g) || []).length;
         if (count == 0) {
             return null;
@@ -114,8 +114,8 @@ function convertUserTicker(str) {
     for (i = 0; i < userData.length; i++) {
         tmpArticles.push('<li>' + sanitizeData(userData[i]) + '&nbsp;&nbsp;&vert;&nbsp;</li>');
     }
-    // How many articles to show (defaults to 10 if no value set in client (f5))
-    articles = tmpArticles.slice(0, f5);
+    // How many articles to show (defaults to 10 if no value set in client (f3))
+    articles = tmpArticles.slice(0, f3);
     // If fetched articles not equal to last fetch, update ticker
     if (!articlesEqual(articles, lastArticles)) { 
         fadeOutTicker(articles);
@@ -142,8 +142,8 @@ function fetchFlockler() {
             });
             // Reverse order, oldest article first
             //tmpArticles = tmpArticles.reverse();
-            // How many articles to show (defaults to 10 if no value set in client (f5))
-            articles = tmpArticles.slice(0, f5);
+            // How many articles to show (defaults to 10 if no value set in client (f3))
+            articles = tmpArticles.slice(0, f3);
             // If fetched articles not equal to last fetch update ticker
             if (!articlesEqual(articles, lastArticles)) { 
                 fadeOutTicker(articles);
