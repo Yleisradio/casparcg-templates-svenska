@@ -5,46 +5,13 @@
 
 .main {
   position: absolute;
-  top: calc(12 * var(--margin));
+  top: calc(12 * var(--margin) + 3.05em);
   left: var(--margin);
   width: calc(100vw - 2 * var(--margin) - 12vw);
   opacity: 0;
 }
 
 .f1_bg {
-  background: var(--main-color);
-  display: table;
-  position: relative;
-  padding: 0.2em 0.4em;
-}
-
-.f1_text {
-  color: var(--white-color);
-  font-family: 'Yle-Black';
-  font-size: 0.8rem;
-  line-height: 1;
-  width: 100%;
-}
-
-.f2_bg {
-  background: var(--white-color);
-  display: table;
-  position: relative;
-  padding: 0.1em 0.4em 0em;
-  width: 100%;
-}
-
-.f2_text {
-  color: var(--black-color);
-  font-family: 'Yle-Black';
-  font-size: 1.45rem;
-  line-height: 1.25;
-  overflow: hidden;
-  white-space: nowrap;
-  letter-spacing: -0.05rem;
-}
-
-.f3_bg {
   z-index: 2;
   background: #252525;
   float: left;
@@ -52,7 +19,7 @@
   padding: 0.1em 0.4em;
 }
 
-.f3_text {
+.f1_text {
   color: var(--white-color);
   font-family: 'Yle-Regular';
   font-size: 0.9rem;
