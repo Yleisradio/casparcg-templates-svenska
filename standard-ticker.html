@@ -1,56 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>standard-ticker</title>
-		<script>
-			// This CasparCG template is made for Svenska YLE by Niclas Hallgren 2018
-			// The WebTicker script used is commercially licensed to Niclas Hallgren and may not be used in other templates without proper license
-			// https://maze.digital/webticker/license/
-			
-			// f0 = flockler id
-			// f1 = line 1
-			// f2 = line 2
-			// f3 = line 3 left
-			// f4 = "", manual ticker data, f0 must be empty or 0 for this to be used
-			// f5 = 10, how many articles to show (max 20)
-			// f6 = false, [true,false] show only text inside <strong></strong> tags
-			
-			start = new Date().getTime();
-		</script>
-    <link rel="stylesheet" type="text/css" href="css/colors-standard.css">
-    <link rel="stylesheet" type="text/css" href="css/basics.css">
-		<link rel="stylesheet" type="text/css" href="css/ticker.css">
-    <script src="js/webcg-framework.umd.js"></script>
-		<script src="js/jquery-3.3.1.min.js"></script>
-		<script src="js/jquery.webticker.min.js"></script>
-		<script src="js/ticker.js"></script>
-		<script src="js/flockler.js"></script>
-    </head>
-    <body>
-		<div class="main" id="main">
-			<div class="f1_bg" id="f1_bg">
-				<div class="f1_text" id="f1_text"></div>
-			</div>
-			<div class="f2_bg" id="f2_bg">
-				<div class="f2_text" id="f2_text"></div>
-			</div>
-			<div class="f3_bg" id="f3_bg">
-				<div class="f3_text" id="f3_text"></div>
-			</div>
-			<div class="ticker_bg" id="ticker_bg">
-				<div class="ticker" id="ticker">
-					<ul class="webTicker" id="webTicker">
-						<li>&nbsp;</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-    </body>
-	<script>
-		$(document).ready(function() {
-			ready = new Date().getTime();
-			console.log('Flockler Template Load Time: ' + (ready-start) + 'ms');
-		});
-	</script>
+<head>
+  <meta charset="utf-8">
+  <title>standard-ticker</title>
+  <script>
+    // This CasparCG template is made for Svenska YLE by Niclas Hallgren 2018
+    // The WebTicker script used is commercially licensed to Niclas Hallgren and may not be used in other templates without proper license
+    // https://maze.digital/webticker/license/
+    
+    // f0 = flockler id
+    // f1 = line 1 left
+    // f2 = "", manual ticker data, f0 must be empty or 0 for this to be used
+    // f3 = 10, how many articles to show (max 20)
+    // f4 = false, [true,false] show only text inside <strong></strong> tags
+    
+    start = new Date().getTime();
+  </script>
+  <link rel="stylesheet" type="text/css" href="css/colors-standard.css">
+  <link rel="stylesheet" type="text/css" href="css/basics.css">
+  <link rel="stylesheet" type="text/css" href="css/ticker.css">
+  <script src="js/webcg-framework.umd.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.webticker.min.js"></script>
+  <script src="js/ticker.js"></script>
+  <script src="js/flockler.js"></script>
+</head>
+<body>
+  <div class="main" id="main">
+    <div class="f1_bg" id="f1_bg">
+      <div class="f1_text" id="f1_text"></div>
+    </div>
+    <div class="ticker_bg" id="ticker_bg">
+      <div class="ticker" id="ticker">
+        <ul class="webTicker" id="webTicker">
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $(document).ready(function() {
+    ready = new Date().getTime();
+    console.log('Flockler Template Load Time: ' + (ready-start) + 'ms');
+  });
+</script>
 </html>
