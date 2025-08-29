@@ -9,6 +9,10 @@ This repo is a collection of HTML Templates for CasparCG.
 
 To use the debugging features, add `?debug=true` to the end of the url.
 
+## Preview
+
+https://yleisradio.github.io/casparcg-templates-svenska/
+
 ## Installing
 
 If you have git installed, open a terminal in your templates folder and run `git clone git@github.com:Yleisradio/casparcg-templates-svenska.git svenska`.
